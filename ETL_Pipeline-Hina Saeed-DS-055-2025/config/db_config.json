@@ -1,1 +1,10 @@
-
+{
+    "mongo_uri": "mongodb+srv://<username>:<password>@cluster0.mongodb.net/ride_weather_db?retryWrites=true&w=majority",
+    "postgres": {
+        "user": "postgres",
+        "password": "your_password",
+        "host": "localhost",
+        "port": "5432",
+        "database": "ride_weather_db"
+    }
+}
