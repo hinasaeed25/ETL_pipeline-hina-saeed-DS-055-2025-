@@ -20,7 +20,7 @@ jobs:
       - name: Run unit tests
         run: python -m unittest discover -s tests
       - name: Validate schema
-        run: python -c "import pandas as pd; df = pd.read_csv('data/weather_data.csv'); assert 'Formatted Date' in df.columns"
+        run: python -c "import pandas as pd; df = pd.read_csv('data/sample_data.csv'); assert 'Formatted Date' in df.columns"
 
   deploy:
     needs: test
@@ -29,6 +29,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Deploy to staging
-        run: |
-          echo "Deploying to staging (simulated)"
-          # Add deployment logic (e.g., SCP to server, Docker push)
+        run: echo "Deploying to staging (simulated)"
+        # Add real deployment logic (e.g., SCP to server)
