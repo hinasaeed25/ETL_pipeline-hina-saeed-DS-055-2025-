@@ -1,7 +1,6 @@
-pandas
-requests
-sqlalchemy
-psycopg2-binary
-gspread
-oauth2client
-pytest
+pandas==2.2.2
+pymongo==4.6.3
+sqlalchemy==2.0.30
+psycopg2-binary==2.9.9
+schedule==1.2.2
+pypandoc==1.13
